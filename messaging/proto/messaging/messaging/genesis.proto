@@ -1,0 +1,12 @@
+syntax = "proto3";
+package messaging.messaging;
+
+import "gogoproto/gogo.proto";
+import "messaging/messaging/params.proto";
+
+option go_package = "messaging/x/messaging/types";
+
+// GenesisState defines the messaging module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

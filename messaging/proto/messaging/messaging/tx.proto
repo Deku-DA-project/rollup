@@ -1,0 +1,7 @@
+syntax = "proto3";
+package messaging.messaging;
+
+option go_package = "messaging/x/messaging/types";
+
+// Msg defines the Msg service.
+service Msg {}
